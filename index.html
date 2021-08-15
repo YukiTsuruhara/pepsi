@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pepsi</title>
+</head>
+<body class="sec">
+    <header class="header">
+        <a href="" class="header__logo">
+            <img src="./images/pepsi-logo.png" alt="pepsi-logo">
+        </a>
+        <ul class="header__list">
+            <li><a href="">VIEW PRODUCTS</a></li>
+            <li><a href="">WHAT'S NEW</a></li>
+            <li><a href="">NEWSLETTER</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+    </header>
+    <section class="pepsi">
+        <div class="pepsi__contents">
+            <div class="pepsi__textarea">
+                <h2 class="pepsi__heading">
+                    THAT'S WHAT <br>
+                    <span>I LIKE</span>
+                </h2>
+                <p class="pepsi__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium,
+                    ipsum consequuntur ullam non perferendis, repudiandae veniam molestiae alias eaque soluta laborum nisi perspiciatis a explicabo quia.
+                    Modi, explicabo harum.
+                </p>
+                <a href="#">VIEW ALL PRODUCTS</a>
+            </div>
+            <div class="pepsi__image">
+                <img class="pepsi__image__src" src="./images/pepsi01.png" alt="pepsi__image">
+            </div>
+        </div>
+        <ul class="pepsi__list">
+            <li><a href="#">
+                <img src="./images/pepsi01.png" alt="pepsi-01" onclick="changeImage('./images/pepsi01.png'); changeColor('#0062be')">
+            </a></li>
+            <li><a href="#">
+                <img src="./images/pepsi02.png" alt="pepsi-02" onclick="changeImage('./images/pepsi02.png'); changeColor('#e60c2c')">
+            </a></li>
+            <li><a href="#">
+                <img src="./images/pepsi03.png" alt="pepsi-03" onclick="changeImage('./images/pepsi03.png'); changeColor('#1e1e1e')">
+            </a></li>
+        </ul>
+        <ul class="pepsi__sns">
+            <li><a href="#">
+                <img src="./images/icon-twitter.svg" alt="twitter">
+            </a></li>
+            <li><a href="#">
+                <img src="./images/icon-instagram.svg" alt="instagram">
+            </a></li>
+            <li><a href="#">
+                <img src="./images/icon-facebook.svg" alt="facebook">
+            </a></li>
+        </ul>
+    </section>
+
+    <script>
+        function changeImage(anythings) {
+            document.querySelector('.pepsi__image__src').src = anythings;
+        }
+
+        function changeColor(color) {
+            const pepsi = document.querySelector('.sec');
+            pepsi.style.background = color;
+        }
+    </script>
+</body>
+</html>
